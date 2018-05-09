@@ -14,6 +14,7 @@
 
                         <div class="header header-primary text-center">
                             <h4>Inicio de sesión</h4>
+  
                            <!--  <div class="social-line">
                                 <a href="#pablo" class="btn btn-simple btn-just-icon">
                                     <i class="fa fa-facebook-square"></i>
@@ -26,6 +27,15 @@
                                 </a>
                             </div>
  -->                        </div>
+                               @if (count($errors)>0)
+                                <div class="alert alert-danger">
+                                    <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{$error}}</li>
+                                    @endforeach
+                                    </ul>
+                                </div>
+                                @endif
                         <p class="text-divider">Ingresa tus datos</p>
                         <div class="content">
 
@@ -53,7 +63,7 @@
                             </div>
                         </div>
                         <div class="footer text-center">
-                            <button t class="btn btn-simple btn-primary btn-lg">Ingresar
+                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Ingresar
                         </div>
                     </form>
                 </div>
