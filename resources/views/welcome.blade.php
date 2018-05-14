@@ -7,11 +7,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="title">Write the best title for your page.</h1>
-                <h4>Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+                <h1 class="title">Relox Shop</h1>
+                <h4>La moda que hace Tic-Tac</h4>
                 <br />
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
-                    <i class="fa fa-play"></i> Watch video
+                    <i class="fa fa-play"></i> ¿Como funciona?
                 </a>
             </div>
         </div>
@@ -69,9 +69,9 @@
                     @foreach ($products as $product)
                     <div class="col-md-4">
                         <div class="team-player">
-                            <img src="../assets/img/avatar.jpg" alt="Thumbnail Image" class="img-raised img-circle">
-                            <h4 class="title">{{$product->name}} <br />
-                                <small class="text-muted">Model</small>
+                            <img src="{{$product->images()->first()->image}}" alt="Thumbnail Image" class="img-raised img-circle">
+                            <h4 class="title">{{$product->name}} <br> />
+                                <small class="text-muted">{{$product->category->name}}</small>
                             </h4>
                             <p class="description">{{$product->description}}</p>
                             <a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
