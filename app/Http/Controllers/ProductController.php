@@ -52,6 +52,14 @@ class ProductController extends Controller
 
     public function update(Request $request, $id)
     {
+      	$rules = 
+    	[
+    		'name' => 'required|min:3',
+    		'description' => 'required|max:200',
+    		'price' => 'required|numeric|min:0'
+    	];
+    	
+    	$this -> validate($request, $rules);
     	//registrar el nuevo producto en la db
     	//dd($request->all());
 

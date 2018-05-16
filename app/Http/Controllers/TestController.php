@@ -9,7 +9,7 @@ class TestController extends Controller
 {
     public function welcome()
     {
-    	$products = product::limit(20)->get();
+    	$products = product::all();
     	return view ('welcome') -> with(compact('products'));
     }
 }
