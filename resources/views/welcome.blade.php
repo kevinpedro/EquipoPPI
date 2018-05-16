@@ -23,8 +23,8 @@
         <div class="section text-center section-landing">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="title">Let's talk product</h2>
-                    <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
+                    <h2 class="title">Quienes somos</h2>
+                    <h5 class="description">Relox_shop somos una empresa dedicada a contar y hacer que cuenten los mejores momentos de tu vida. Una de cada 10 personas em México utiliza nuestros relojes. Usando la última tecnología, y técnicas probadas, estamos desarrollando soluciones innovadoras que mejoren la vida de nuestros consumidores, a través de mayor confort..</h5>
                 </div>
             </div>
 
